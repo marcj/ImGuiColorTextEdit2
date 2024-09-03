@@ -1,4 +1,4 @@
-# ImGuiColorTextEdit
+# ImGuiColorTextEdit2
 Syntax highlighting text editor for ImGui
 
 ![Screenshot](https://github.com/BalazsJako/ImGuiColorTextEdit/wiki/ImGuiTextEdit.png "Screenshot")
