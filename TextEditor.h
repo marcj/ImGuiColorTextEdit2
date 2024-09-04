@@ -6,6 +6,7 @@
 #include <memory>
 #include <unordered_set>
 #include <unordered_map>
+#include <functional>
 #include <map>
 #include <regex>
 #include "imgui.h"
