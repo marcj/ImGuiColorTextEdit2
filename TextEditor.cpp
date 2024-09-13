@@ -1161,7 +1161,7 @@ void TextEditor::Render(const char* aTitle, const ImVec2& aSize, bool aBorder)
 	ImGui::PushStyleColor(ImGuiCol_ChildBg, ImGui::ColorConvertU32ToFloat4(mPalette[(int)PaletteIndex::Background]));
 	ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(0.0f, 0.0f));
 	if (!mIgnoreImGuiChild)
-		ImGui::BeginChild(aTitle, aSize, aBorder, ImGuiWindowFlags_HorizontalScrollbar | ImGuiWindowFlags_AlwaysHorizontalScrollbar | ImGuiWindowFlags_NoMove);
+		ImGui::BeginChild(aTitle, aSize, aBorder, ImGuiWindowFlags_HorizontalScrollbar | ImGuiWindowFlags_NoMove);
 
 	if (mHandleKeyboardInputs)
 	{
@@ -2058,9 +2058,9 @@ const TextEditor::Palette & TextEditor::GetDarkPalette()
 			0x800020ff, // ErrorMarker
 			0x40f08000, // Breakpoint
 			0xff707000, // Line number
-			0x40000000, // Current line fill
-			0x40808080, // Current line fill (inactive)
-			0x40a0a0a0, // Current line edge
+			0x60444444, // Current line fill
+			0x00000000, // Current line fill (inactive)
+			0x00000000, // Current line edge
 		} };
 	return p;
 }
@@ -2086,9 +2086,9 @@ const TextEditor::Palette & TextEditor::GetLightPalette()
 			0xa00010ff, // ErrorMarker
 			0x80f08000, // Breakpoint
 			0xff505000, // Line number
-			0x40000000, // Current line fill
-			0x40808080, // Current line fill (inactive)
-			0x40000000, // Current line edge
+			0x60444444, // Current line fill
+			0x00000000, // Current line fill (inactive)
+			0x00000000, // Current line edge
 		} };
 	return p;
 }
